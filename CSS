@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Crimson+Text:wght@400;600&family=Caveat:wght@400;600&display=swap');
+
+body {
+  font-family: 'Crimson Text', 'Georgia', serif;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #6B4E3D;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3 {
+  font-family: 'Cormorant Garamond', 'Garamond', serif;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  color: #5E7153;
+}
+
+.handwritten {
+  font-family: 'Caveat', cursive;
+  font-size: 1.4rem;
+}

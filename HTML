@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cottagecore Layout</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Crimson+Text:wght@400;600&family=Caveat:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Crimson Text', Georgia, serif;
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: #6B4E3D;
+      background-color: #FDF6EC;
+      background-image:
+        repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(107,78,61,0.03) 2px, rgba(107,78,61,0.03) 3px),
+        repeating-linear-gradient(90deg, transparent, transparent 2px, rgba(107,78,61,0.02) 2px, rgba(107,78,61,0.02) 3px);
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 24px;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+      margin-bottom: 40px;
+    }
+
+    .hero h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.8rem;
+      font-weight: 500;
+      color: #5E7153;
+      margin-bottom: 12px;
+    }
+
+    .hero .subtitle {
+      font-family: 'Caveat', cursive;
+      font-size: 1.5rem;
+      color: #C9A0A0;
+    }
+
+    .divider {
+      text-align: center;
+      margin: 32px 0;
+      color: #8B9E7E;
+      font-size: 1.2rem;
+      letter-spacing: 0.5em;
+      opacity: 0.5;
+    }
+
+    .card {
+      background: #FAF3E8;
+      border: 1px solid #E8D5A3;
+      border-radius: 16px;
+      padding: 32px;
+      margin-bottom: 24px;
+      box-shadow: 0 2px 8px rgba(107, 78, 61, 0.08);
+      position: relative;
+    }
+
+    .card::before {
+      content: '';
+      position: absolute;
+      top: -1px;
+      left: 20px;
+      right: 20px;
+      height: 3px;
+      background: linear-gradient(90deg, #8B9E7E, #C9A0A0, #E8D5A3);
+      border-radius: 3px;
+    }
+
+    .card h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.6rem;
+      font-weight: 500;
+      color: #5E7153;
+      margin-bottom: 12px;
+    }
+
+    .button {
+      display: inline-block;
+      background: #8B9E7E;
+      color: #FDF6EC;
+      border: none;
+      border-radius: 24px;
+      padding: 12px 32px;
+      font-family: 'Crimson Text', serif;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      box-shadow: 0 2px 6px rgba(94, 113, 83, 0.25);
+    }
+
+    .button:hover {
+      background: #5E7153;
+      transform: translateY(-1px);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="hero">
+      <h1>A Quiet Afternoon</h1>
+      <p class="subtitle">where wildflowers meet warm linen</p>
+    </div>
+    <div class="divider">&bull; &bull; &bull;</div>
+    <div class="card">
+      <h2>From the Garden</h2>
+      <p>Sun-warmed tomatoes, trailing rosemary, and the gentle hum of bees
+         among the lavender. Every detail is touched by the unhurried rhythm
+         of a countryside morning.</p>
+    </div>
+    <div class="card">
+      <h2>By the Hearth</h2>
+      <p>A wool blanket, a cup of chamomile, and the crackle of birch logs.
+         The design embraces warmth, softness, and the beauty of simple things.</p>
+    </div>
+    <div style="text-align: center; margin-top: 32px;">
+      <a href="#" class="button">Explore the Meadow</a>
+    </div>
+  </div>
+</body>
+</html>
